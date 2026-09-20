@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yousef Hosny Abdel Rasoul – Data Engineer Portfolio</title>
+  <meta name="description" content="Yousef Hosny Abdel Rasoul – Data Engineer & Python/SQL Specialist. Portfolio showcasing data pipelines, ETL/ELT architectures, database schemas, and analytics." />
+  <meta name="keywords" content="Data Engineer, Python, SQL, ETL, ELT, Database, DEPI, Yousef Hosny" />
+  <meta name="author" content="Yousef Hosny Abdel Rasoul" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="assets/profile.png" />
+</head>
+<body>
+
+  <!-- ═══════════════ FLOATING BACKGROUND PARTICLES & SHAPES ═══════════════ -->
+  <div class="floating-shapes" id="floating-shapes" aria-hidden="true">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+    <div class="shape shape-4"></div>
+    <div class="shape shape-5"></div>
+    <div class="shape shape-6"></div>
+  </div>
+
+  <!-- Background Glowing Data Mesh -->
+  <div class="bg-glow-mesh" aria-hidden="true"></div>
+
+  <!-- ═══════════════ TOP NAVIGATION BAR ═══════════════ -->
+  <header class="top-bar">
+    <div class="top-bar-left">
+      <a href="#profile" class="logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">YH.DATA_SYS</span>
+        <span class="system-status"><span class="status-dot"></span>ONLINE</span>
+      </a>
+      <nav class="nav-links-container" aria-label="Main Navigation">
+        <a href="#profile" class="nav-link active" data-section="001"><span class="nav-num">001</span><span class="nav-label">PROFILE</span></a>
+        <a href="#biography" class="nav-link" data-section="002"><span class="nav-num">002</span><span class="nav-label">BIO</span></a>
+        <a href="#pipeline" class="nav-link" data-section="003"><span class="nav-num">003</span><span class="nav-label">PIPELINE</span></a>
+        <a href="#stats" class="nav-link" data-section="004"><span class="nav-num">004</span><span class="nav-label">METRICS</span></a>
+        <a href="#terminal" class="nav-link" data-section="005"><span class="nav-num">005</span><span class="nav-label">CONSOLE</span></a>
+        <a href="#skills" class="nav-link" data-section="006"><span class="nav-num">006</span><span class="nav-label">SKILLS</span></a>
+        <a href="#projects" class="nav-link" data-section="007"><span class="nav-num">007</span><span class="nav-label">PROJECTS</span></a>
+        <a href="#experience" class="nav-link" data-section="008"><span class="nav-num">008</span><span class="nav-label">EXP</span></a>
+        <a href="#education" class="nav-link" data-section="009"><span class="nav-num">009</span><span class="nav-label">EDU</span></a>
+        <a href="#contact" class="nav-link" data-section="010"><span class="nav-num">010</span><span class="nav-label">CONTACT</span></a>
+      </nav>
+    </div>
+
+    <div class="top-bar-right">
+      <span class="meta-tag hide-mobile">ID: YH-DE-2026</span>
+      <span class="meta-location hide-mobile">📍 KAFR EL-SHEIKH, EG</span>
+      <div class="clock-badge">
+        <span class="clock-label">CAIRO</span>
+        <span class="clock" id="live-clock">00:00:00:000</span>
+      </div>
+      <a href="CV.pdf" download="Yousef_Hosny_Data_Engineering_CV.pdf" class="download-btn" title="Download Official CV">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+          <polyline points="7 10 12 15 17 10"/>
+          <line x1="12" y1="15" x2="12" y2="3"/>
+        </svg>
+        <span>DOWNLOAD CV</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- ═══════════════ MAIN CONTENT ═══════════════ -->
+  <main class="main-wrapper">
+
+    <!-- ══════ ROW 1: Profile + Bio + Principles ══════ -->
+    <div class="grid-row hero-row">
+
+      <!-- PROFILE CARD (001) -->
+      <section id="profile" class="card profile-card" aria-label="Developer Profile">
+        <div class="card-header">
+          <span class="header-tag">[ DATA_ENGINEER_PROFILE / 001 ]</span>
+          <span class="header-status">STATUS: AVAILABLE</span>
+        </div>
+
+        <div class="profile-img-wrapper">
+          <!-- Canvas for Neon Data Stream effect behind avatar -->
+          <canvas id="matrix-canvas" class="matrix-canvas"></canvas>
+          <div class="profile-img-frame">
+            <img src="assets/profile.png" alt="Yousef Hosny Abdel Rasoul" class="profile-img" />
+            <div class="frame-scanner" aria-hidden="true"></div>
+          </div>
+          <div class="photo-badge">
+            <span class="badge-dot"></span> PYTHON & SQL SPECIALIST
+          </div>
+        </div>
+
+        <div class="profile-info">
+          <h1 class="profile-name">
+            <span class="first-name">YOUSEF HOSNY</span>
+            <span class="last-name">ABDEL RASOUL</span>
+          </h1>
+
+          <div class="barcode-container">
+            <div class="barcode">||||| |||| ||| ||||| |||| ||| |||| |||||| |||</div>
+            <span class="barcode-id">DE-SYS-100386808</span>
+          </div>
+
+          <p class="profile-title">
+            <span class="title-pipe">|</span> DATA ENGINEERING STUDENT & PYTHON/SQL SPECIALIST
+          </p>
+
+          <div class="quick-meta-list">
+            <div class="meta-item">
+              <span class="meta-icon">📍</span>
+              <span class="meta-text">Kafr El-Sheikh, Egypt</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-icon">🎓</span>
+              <span class="meta-text">HIET (Computer & Control)</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-icon">💼</span>
+              <span class="meta-text">Seeking Data Engineer Intern / Junior</span>
+            </div>
+          </div>
+
+          <!-- Social / Quick Links -->
+          <nav class="social-links" aria-label="Social Links">
+            <a href="https://www.linkedin.com/in/yousef-hosny" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn Profile">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/yousef-hosny" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub Profile">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              <span>GitHub</span>
+            </a>
+            <a href="mailto:Yousefhosnyabdelrasoul1@gmail.com" class="social-btn" title="Email Directly">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>Email</span>
+            </a>
+            <a href="https://wa.me/201000386808" target="_blank" rel="noopener noreferrer" class="social-btn highlight-btn" title="WhatsApp Message">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+              <span>+20 1000386808</span>
+            </a>
+          </nav>
+        </div>
+      </section>
+
+      <!-- RIGHT COLUMN: Bio + Principles -->
+      <div class="right-column">
+
+        <!-- BIOGRAPHY CARD (002) -->
+        <section id="biography" class="card bio-card" aria-label="Biography">
+          <div class="card-header">
+            <span class="header-tag">[ BIOGRAPHY & EXECUTIVE SUMMARY / 002 ]</span>
+            <span class="header-pill"><span class="pulse-cyan"></span> DEPI TRAINED</span>
+          </div>
+
+          <h2 class="bio-headline">ENGINEERING SCALABLE PIPELINES, RELATIONAL ARCHITECTURES, AND DATA-DRIVEN VALUE.</h2>
+
+          <p class="bio-text">
+            Highly motivated third-year <strong>Computer and Control Engineering</strong> student focused on <strong>Data Engineering, Python, SQL, and Data Analysis</strong>. Hands-on experience gained through intensive training at the <strong>Digital Egypt Pioneers Initiative (DEPI)</strong> and Olspark Practical Data Analysis, supplemented by real-world projects involving full lifecycle data workflows.
+          </p>
+
+          <p class="bio-text">
+            Strong foundation in <strong>ETL/ELT concepts, relational databases, data processing, data quality</strong>, analytical thinking, and problem-solving skills. Experienced in handling end-to-end data collection, cleansing, transformation, aggregation, schema design, and sensor telemetry logging. Demonstrated strong collaboration skills and effective communication with a data-driven approach.
+          </p>
+
+          <div class="bio-highlight">
+            <span class="highlight-marker">›</span>
+            <span><strong>Target Role:</strong> Actively seeking a <strong>Data Engineer Intern</strong> or <strong>Junior Data Engineer</strong> opportunity to engineer scalable data infrastructure and clean data pipelines.</span>
+          </div>
+        </section>
+
+        <!-- PRINCIPLES CARD (003) -->
+        <section id="principles" class="card principles-card" aria-label="Core Principles">
+          <div class="card-header">
+            <span class="header-tag">[ ENGINEERING_PRINCIPLES / 003 ]</span>
+          </div>
+
+          <div class="principles-grid">
+            <div class="principle-item">
+              <div class="principle-icon-wrapper">
+                <span class="principle-dot"></span>
+                <span class="principle-code">P_01</span>
+              </div>
+              <div class="principle-content">
+                <h3 class="principle-title">DATA INTEGRITY & ZERO LOSS</h3>
+                <p class="principle-desc">Strict validation at ingestion; enforcing schema constraints, data types, and referential keys to ensure 100% clean data.</p>
+              </div>
+            </div>
+
+            <div class="principle-item">
+              <div class="principle-icon-wrapper">
+                <span class="principle-dot"></span>
+                <span class="principle-code">P_02</span>
+              </div>
+              <div class="principle-content">
+                <h3 class="principle-title">OPTIMIZED RELATIONAL SCHEMAS</h3>
+                <p class="principle-desc">Designing normalized 3NF structures with foreign key integrity, indexed queries, and measurable efficiency gains.</p>
+              </div>
+            </div>
+
+            <div class="principle-item">
+              <div class="principle-icon-wrapper">
+                <span class="principle-dot"></span>
+                <span class="principle-code">P_03</span>
+              </div>
+              <div class="principle-content">
+                <h3 class="principle-title">ROBUST ETL/ELT PIPELINES</h3>
+                <p class="principle-desc">Modular Python and SQL pipelines engineered for automated data cleansing, aggregation, and reliable batch ingestion.</p>
+              </div>
+            </div>
+
+            <div class="principle-item">
+              <div class="principle-icon-wrapper">
+                <span class="principle-dot"></span>
+                <span class="principle-code">P_04</span>
+              </div>
+              <div class="principle-content">
+                <h3 class="principle-title">HARDWARE & EMBEDDED TELEMETRY</h3>
+                <p class="principle-desc">Bridging edge hardware (ESP32, Arduino) with time-series logging to capture high-frequency physical telemetry.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- ══════ ROW 2: Interactive Data Pipeline Visualizer ══════ -->
+    <section id="pipeline" class="card full-width-card pipeline-section" aria-label="Data Pipeline Architecture">
+      <div class="card-header">
+        <span class="header-tag">[ ARCHITECTURE // END-TO-END DATA PIPELINE FLOW / 003 ]</span>
+        <span class="header-meta">CLICK NODES TO INSPECT MECHANISMS</span>
+      </div>
+
+      <div class="pipeline-visualizer">
+        <div class="pipeline-flow-track" id="pipeline-track">
+
+          <!-- Node 1: Sources -->
+          <div class="pipeline-node active" data-node="sources">
+            <div class="node-badge">01. INGESTION</div>
+            <div class="node-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+            </div>
+            <h4 class="node-title">DATA SOURCES</h4>
+            <p class="node-subtitle">IoT Sensors, CSVs, Transactions & Relational Feeds</p>
+            <div class="node-tags">
+              <span>ESP32</span><span>CSVs</span><span>APIs</span>
+            </div>
+          </div>
+
+          <!-- Flow Connector 1 -->
+          <div class="pipeline-connector">
+            <div class="connector-line"></div>
+            <div class="flowing-pulse"></div>
+            <span class="connector-arrow">➔</span>
+          </div>
+
+          <!-- Node 2: Transformation -->
+          <div class="pipeline-node" data-node="transform">
+            <div class="node-badge">02. PROCESS</div>
+            <div class="node-icon python-accent">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+            </div>
+            <h4 class="node-title">PYTHON ETL ENGINE</h4>
+            <p class="node-subtitle">Cleaning, Imputation, Aggregations & Type Casting</p>
+            <div class="node-tags">
+              <span>Pandas</span><span>NumPy</span><span>ETL</span>
+            </div>
+          </div>
+
+          <!-- Flow Connector 2 -->
+          <div class="pipeline-connector">
+            <div class="connector-line"></div>
+            <div class="flowing-pulse delay-1"></div>
+            <span class="connector-arrow">➔</span>
+          </div>
+
+          <!-- Node 3: Storage -->
+          <div class="pipeline-node" data-node="storage">
+            <div class="node-badge">03. WAREHOUSE</div>
+            <div class="node-icon sql-accent">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </div>
+            <h4 class="node-title">SQL SERVER & STORAGE</h4>
+            <p class="node-subtitle">3NF Normalized Relational Tables & Optimized Indices</p>
+            <div class="node-tags">
+              <span>SQL Server</span><span>3NF</span><span>Indexes</span>
+            </div>
+          </div>
+
+          <!-- Flow Connector 3 -->
+          <div class="pipeline-connector">
+            <div class="connector-line"></div>
+            <div class="flowing-pulse delay-2"></div>
+            <span class="connector-arrow">➔</span>
+          </div>
+
+          <!-- Node 4: Analytics -->
+          <div class="pipeline-node" data-node="analytics">
+            <div class="node-badge">04. CONSUMPTION</div>
+            <div class="node-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </div>
+            <h4 class="node-title">ANALYTICS & KPIS</h4>
+            <p class="node-subtitle">Data Aggregation, Business Metrics & Decision Reports</p>
+            <div class="node-tags">
+              <span>EDA</span><span>Metrics</span><span>Reports</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Interactive Node Inspector Box -->
+        <div class="pipeline-inspector" id="pipeline-inspector">
+          <div class="inspector-header">
+            <span class="inspector-icon">⚙️</span>
+            <span class="inspector-title" id="inspector-title">01. INGESTION & DATA SOURCES</span>
+            <span class="inspector-badge" id="inspector-badge">INPUT LAYER</span>
+          </div>
+          <p class="inspector-desc" id="inspector-desc">
+            Raw data is gathered from edge IoT telemetry (ESP32 continuous sensor logging to SD card), multi-source retail CSV datasets, and structured databases. Standardized staging handles raw data buffers, verifying data schema, encoding, and timestamp coherence.
+          </p>
+          <div class="inspector-specs" id="inspector-specs">
+            <div class="spec-pill"><span>Format:</span> CSV, JSON, Time-Series Streams</div>
+            <div class="spec-pill"><span>Protocols:</span> I2C, SPI, SQL Drivers, REST</div>
+            <div class="spec-pill"><span>Quality Gate:</span> Null-check, Schema verification</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════ ROW 3: Telemetry Stats & Interactive Console ══════ -->
+    <div class="grid-row stats-console-row">
+
+      <!-- STATS CARD (004) -->
+      <section id="stats" class="card stats-card" aria-label="Telemetry Statistics">
+        <div class="card-header">
+          <span class="header-tag">[ SYSTEM_METRICS & STATS / 004 ]</span>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-value" data-target="10000">10,000+</div>
+            <div class="stat-label">ROWS PROCESSED & TRANSFORMED</div>
+            <div class="stat-bar"><div class="stat-bar-fill" style="width: 95%;"></div></div>
+            <div class="stat-sub">End-to-end cleaning & ETL in DEPI & Olspark</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-value" data-target="25">25%</div>
+            <div class="stat-label">SQL QUERY EFFICIENCY BOOST</div>
+            <div class="stat-bar"><div class="stat-bar-fill" style="width: 85%;"></div></div>
+            <div class="stat-sub">Relational indexing & execution plan optimization</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-value" data-target="100">100%</div>
+            <div class="stat-label">DEPI ASSIGNMENT ACCURACY</div>
+            <div class="stat-bar"><div class="stat-bar-fill" style="width: 100%;"></div></div>
+            <div class="stat-sub">Across comprehensive Python & SQL coursework</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-value" data-target="1000">1,000+</div>
+            <div class="stat-label">IOT SENSOR READINGS LOGGED</div>
+            <div class="stat-bar"><div class="stat-bar-fill" style="width: 90%;"></div></div>
+            <div class="stat-sub">Continuous environmental telemetry via ESP32</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- INTERACTIVE SQL / PYTHON CONSOLE (005) -->
+      <section id="terminal" class="card terminal-card" aria-label="Interactive Query Terminal">
+        <div class="card-header">
+          <div class="terminal-dots">
+            <span class="term-dot red"></span>
+            <span class="term-dot yellow"></span>
+            <span class="term-dot green"></span>
+          </div>
+          <span class="header-tag">[ INTERACTIVE_QUERY_CONSOLE / 005 ]</span>
+          <span class="terminal-badge">LIVE REPL</span>
+        </div>
+
+        <div class="terminal-controls">
+          <span class="controls-label">PRESET QUERIES:</span>
+          <button class="term-btn active" data-query="skills">SELECT * FROM skills;</button>
+          <button class="term-btn" data-query="pipeline">pipeline.status()</button>
+          <button class="term-btn" data-query="projects">SELECT name, role FROM projects;</button>
+          <button class="term-btn" data-query="contact">SELECT email, phone FROM engineer;</button>
+        </div>
+
+        <div class="terminal-body" id="terminal-output">
+          <div class="term-line prompt-line">
+            <span class="term-prompt">yousef@de-system:~$</span>
+            <span class="term-cmd">SELECT skill, proficiency, domain FROM skills WHERE domain = 'Data Engineering';</span>
+          </div>
+          <div class="term-result">
++------------------------+-------------+---------------------+<br/>
+| SKILL                  | PROFICIENCY | DOMAIN              |<br/>
++------------------------+-------------+---------------------+<br/>
+| ETL/ELT Architectures  | ADVANCED    | Data Engineering    |<br/>
+| Data Pipelines         | ADVANCED    | Data Engineering    |<br/>
+| Batch Processing       | STRONG      | Data Engineering    |<br/>
+| Data Quality & Clean   | STRONG      | Data Engineering    |<br/>
+| Relational Schemas     | 3NF MASTER  | Databases           |<br/>
++------------------------+-------------+---------------------+<br/>
+<span class="term-success">>> 5 rows retrieved in 0.0034s. Query execution: 100% valid.</span>
+          </div>
+        </div>
+
+        <div class="terminal-footer">
+          <span class="terminal-tip">💡 Tip: Click any query preset above to simulate real-time query execution.</span>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ══════ ROW 4: Technical Skills Matrix ══════ -->
+    <section id="skills" class="card full-width-card skills-section" aria-label="Technical Skills Matrix">
+      <div class="card-header">
+        <span class="header-tag">[ TECHNICAL_SKILLS_MATRIX / 006 ]</span>
+        <div class="skills-filter-tabs">
+          <button class="filter-tab active" data-filter="all">ALL SKILLS</button>
+          <button class="filter-tab" data-filter="prog-db">PROGRAMMING & DB</button>
+          <button class="filter-tab" data-filter="data-eng">DATA ENGINEERING</button>
+          <button class="filter-tab" data-filter="analytics">PROCESSING & ANALYTICS</button>
+          <button class="filter-tab" data-filter="tools-hw">AI & HARDWARE</button>
+        </div>
+      </div>
+
+      <div class="skills-columns-grid">
+
+        <!-- Category 1: Programming & Databases -->
+        <div class="skill-category-card" data-category="prog-db">
+          <div class="category-header">
+            <div class="cat-icon-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 17l6-6-6-6"/><path d="M12 19h8"/></svg>
+            </div>
+            <h3 class="category-title">PROGRAMMING & DATABASES</h3>
+          </div>
+
+          <div class="skills-pill-list">
+            <div class="skill-pill">
+              <span class="skill-name">Python</span>
+              <span class="skill-level">Core Specialist</span>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-name">SQL</span>
+              <span class="skill-level">Advanced Queries</span>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-name">SQL Server</span>
+              <span class="skill-level">Management & Tuning</span>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-name">Relational Databases</span>
+              <span class="skill-level">RDBMS Architecture</span>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-name">Database Design</span>
+              <span class="skill-level">3NF / Schema Modeling</span>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-name">SQL Queries</span>
+              <span class="skill-level">Joins, CTEs, Windows</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2: Data Engineering -->
+        <div class="skill-category-card" data-category="data-eng">
+          <div class="category-header">
+            <div class="cat-icon-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+            </div>
+            <h3 class="category-title">DATA ENGINEERING</h3>
+          </div>
+
+          <div class="skills-pill-list">
+            <div class="skill-pill highlight-pill">
+              <span class="skill-name">DE Fundamentals</span>
+              <span class="skill-level">Core Architecture</span>
+            </div>
+            <div class="skill-pill highlight-pill">
+              <span class="skill-name">ETL/ELT Concepts</span>
+              <span class="skill-level">Pipeline Design</span>
+            </div>
+            <div class="skill-pill highlight-pill">
+              <span class="skill-name">Data Pipelines</span>
+              <span class="skill-level">Automated Ingestion</span>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-name">Data Integration</span>
+              <span class="skill-level">Multi-Source Sync</span>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-name">Batch Processing</span>
+              <span class="skill-level">Scheduled Workflows</span>
+            </div>
+            <div class="skill-pill highlight-pill">
+              <span class="skill-name">Data Quality</span>
+              <span class="skill-level">Validation & Cleansing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 3: Data Processing & Analysis -->
+        <div class="skill-category-card" data-category="analytics">
+          <div class="category-header">
+            <div class="cat-icon-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </div>
+            <h3 class="category-title">DATA PROCESSING & ANALYSIS</h3>
+          </div>
+
+          <div class="skills-pill-list">
+            <div class="skill-pill">
+              <span class="skill-name">Pandas</span>
+              <span class="skill-level">DataFrames & Ops</span>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-name">NumPy</span>
+              <span class="skill-level">Vectorized Arrays</span>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-name">Data Cleaning</span>
+              <span class="skill-level">Missing Values & Outliers</span>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-name">Data Transformation</span>
+              <span class="skill-level">Feature Engineering</span>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-name">Data Aggregation</span>
+              <span class="skill-level">Groupby & Resampling</span>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-name">EDA & Visualization</span>
+              <span class="skill-level">Insight Discovery</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 4: AI, Tools & Hardware -->
+        <div class="skill-category-card" data-category="tools-hw">
+          <div class="category-header">
+            <div class="cat-icon-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+            </div>
+            <h3 class="category-title">AI, TOOLS & HARDWARE</h3>
+          </div>
+
+          <div class="skills-pill-list">
+            <div class="skill-pill">
+              <span class="skill-name">Machine Learning</span>
+              <span class="skill-level">Predictive Models</span>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-name">Scikit-learn</span>
+              <span class="skill-level">Supervised Learning</span>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-name">OpenCV</span>
+              <span class="skill-level">Computer Vision</span>
+            </div>
+            <div class="skill-pill highlight-pill">
+              <span class="skill-name">Git / GitHub</span>
+              <span class="skill-level">Version Control & CI</span>
+            </div>
+            <div class="skill-pill highlight-pill">
+              <span class="skill-name">Linux / Ubuntu</span>
+              <span class="skill-level">Bash & Environments</span>
+            </div>
+            <div class="skill-pill">
+              <span class="skill-name">Arduino & Sensors</span>
+              <span class="skill-level">Embedded Telemetry</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════ ROW 5: Featured Projects ══════ -->
+    <section id="projects" class="card full-width-card projects-section" aria-label="Featured Projects">
+      <div class="card-header">
+        <span class="header-tag">[ SELECTED_PROJECTS / 007 ]</span>
+        <span class="header-meta">PRODUCTION & EXPERIMENTAL PIPELINES</span>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: Sales Data Analysis -->
+        <article class="project-card">
+          <div class="project-top">
+            <div class="project-category-tag">DATA PROCESSING & PIPELINES</div>
+            <div class="project-year">2026</div>
+          </div>
+
+          <h3 class="project-title">Sales Data Analysis & ETL Pipeline</h3>
+          <p class="project-desc">
+            Engineered an end-to-end data pipeline in Python to collect, clean, and combine 3 separate sales transaction datasets into a unified analytical model. Handled currency standardizations, null imputations, and derived revenue metrics.
+          </p>
+
+          <ul class="project-highlights">
+            <li>Merged and harmonized 3 disparate sales datasets without data loss.</li>
+            <li>Calculated business critical KPIs (Total Sales, Average Order Value, Margin) from raw quantity and unit price.</li>
+            <li>Executed groupby aggregations and summarizations on 5,000+ customer transactions.</li>
+          </ul>
+
+          <div class="project-tech-stack">
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">Pandas</span>
+            <span class="tech-badge">NumPy</span>
+            <span class="tech-badge">SQL</span>
+            <span class="tech-badge">Data Cleaning</span>
+          </div>
+
+          <div class="project-actions">
+            <a href="https://github.com/yousef-hosny" target="_blank" rel="noopener noreferrer" class="project-btn repo-btn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              <span>GITHUB REPO →</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 2: Library Management DB -->
+        <article class="project-card">
+          <div class="project-top">
+            <div class="project-category-tag">DATABASE ARCHITECTURE</div>
+            <div class="project-year">2026</div>
+          </div>
+
+          <h3 class="project-title">Library Management Relational DB</h3>
+          <p class="project-desc">
+            Architected and deployed a comprehensive relational database schema in Microsoft SQL Server following 3rd Normal Form (3NF). Designed entity relationships, cascade rules, and automated consistency constraints across books, members, loans, and inventory.
+          </p>
+
+          <ul class="project-highlights">
+            <li>Engineered a normalized schema with 6 interconnected tables and foreign key integrity.</li>
+            <li>Authored 15+ complex and optimized SQL queries (joins, aggregations, window functions).</li>
+            <li>Enforced strict data quality principles, indexing strategies, and zero redundancy.</li>
+          </ul>
+
+          <div class="project-tech-stack">
+            <span class="tech-badge">SQL Server</span>
+            <span class="tech-badge">Schema Design</span>
+            <span class="tech-badge">3NF Normalization</span>
+            <span class="tech-badge">T-SQL</span>
+            <span class="tech-badge">Data Quality</span>
+          </div>
+
+          <div class="project-actions">
+            <a href="https://github.com/yousef-hosny" target="_blank" rel="noopener noreferrer" class="project-btn repo-btn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              <span>SQL SCHEMA REPO →</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 3: ESP32 Weather Logger -->
+        <article class="project-card">
+          <div class="project-top">
+            <div class="project-category-tag">IOT & DATA INGESTION</div>
+            <div class="project-year">2026</div>
+          </div>
+
+          <h3 class="project-title">ESP32 IoT Weather Logger</h3>
+          <p class="project-desc">
+            Developed an embedded data acquisition and logging system utilizing ESP32 microcontroller with multi-sensory environmental instrumentation. Buffered and structured readings for temperature, humidity, ambient light, and air quality telemetry.
+          </p>
+
+          <ul class="project-highlights">
+            <li>Continuous real-time sensory sampling across I2C and analog sensor buses.</li>
+            <li>Logged 1,000+ continuous structured time-series records to local SD card storage.</li>
+            <li>Formatted data streams with timestamps and checksum validation for downstream ingestion.</li>
+          </ul>
+
+          <div class="project-tech-stack">
+            <span class="tech-badge">ESP32</span>
+            <span class="tech-badge">Sensors</span>
+            <span class="tech-badge">SD Card Logging</span>
+            <span class="tech-badge">I2C Protocol</span>
+            <span class="tech-badge">Time-Series</span>
+          </div>
+
+          <div class="project-actions">
+            <a href="https://github.com/yousef-hosny" target="_blank" rel="noopener noreferrer" class="project-btn repo-btn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              <span>FIRMWARE & HARDWARE REPO →</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 4: Li-Fi Laser & Robotic Arm -->
+        <article class="project-card">
+          <div class="project-top">
+            <div class="project-category-tag">DATA TRANSMISSION & ROBOTICS</div>
+            <div class="project-year">2026</div>
+          </div>
+
+          <h3 class="project-title">Li-Fi Laser & 6-DOF Robotic Arm</h3>
+          <p class="project-desc">
+            Constructed an optical wireless data/audio transmission link (Li-Fi) using concentrated lasers and receiver sensors. Synchronized the telemetry with a 6-Degree-of-Freedom robotic manipulator arm controlled via Bluetooth protocols.
+          </p>
+
+          <ul class="project-highlights">
+            <li>Engineered optical audio/data transmission modulation via modulated laser diodes.</li>
+            <li>Built and calibrated receiver circuit with signal amplification and filtering.</li>
+            <li>Integrated alongside a 6-DOF Bluetooth-controlled robotic manipulator arm (HC-05).</li>
+          </ul>
+
+          <div class="project-tech-stack">
+            <span class="tech-badge">Arduino</span>
+            <span class="tech-badge">Laser Optics</span>
+            <span class="tech-badge">Servos</span>
+            <span class="tech-badge">HC-05 Bluetooth</span>
+            <span class="tech-badge">Control Engineering</span>
+          </div>
+
+          <div class="project-actions">
+            <a href="https://github.com/yousef-hosny" target="_blank" rel="noopener noreferrer" class="project-btn repo-btn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              <span>PROJECT DOCUMENTATION →</span>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ══════ ROW 6: Experience & Education ══════ -->
+    <div class="grid-row exp-edu-row">
+
+      <!-- EXPERIENCE (008) -->
+      <section id="experience" class="card" aria-label="Professional Experience">
+        <div class="card-header">
+          <span class="header-tag">[ PROFESSIONAL_EXPERIENCE / 008 ]</span>
+        </div>
+
+        <div class="timeline">
+
+          <!-- DEPI Trainee -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="marker-dot active-dot"></span>
+              <span class="marker-line"></span>
+            </div>
+            <div class="timeline-content">
+              <div class="exp-header">
+                <div>
+                  <h3 class="exp-role">Data Engineering Trainee</h3>
+                  <h4 class="exp-company">Digital Egypt Pioneers Initiative (DEPI)</h4>
+                </div>
+                <span class="exp-date">Jul 2026 – Dec 2026</span>
+              </div>
+              <ul class="exp-bullets">
+                <li>Applied <strong>Python and SQL</strong> concepts to data processing, data retrieval, and database management tasks, achieving <strong>100% execution accuracy</strong> across course assignments.</li>
+                <li>Practiced end-to-end data collection, data cleaning, data transformation, data aggregation, and data analysis workflows on datasets with <strong>over 10,000 rows</strong>.</li>
+                <li>Studied <strong>ETL/ELT architectures</strong>, data pipeline mechanics, and optimized relational database operations in SQL Server to improve query efficiency by <strong>25%</strong>.</li>
+                <li>Demonstrated strong collaboration skills and teamwork to complete 5 technical group tasks and studied data quality fundamentals.</li>
+                <li>Used <strong>Git and version control</strong> concepts in technical work and developed practical analytical thinking and problem-solving skills.</li>
+              </ul>
+              <div class="exp-tags">
+                <span>Python</span><span>SQL Server</span><span>ETL / ELT</span><span>Data Quality</span><span>Git</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Olspark Trainee -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-content">
+              <div class="exp-header">
+                <div>
+                  <h3 class="exp-role">Data Analysis Trainee</h3>
+                  <h4 class="exp-company">Olspark Practical Data Analysis Training</h4>
+                </div>
+                <span class="exp-date">Aug 2026 – Sep 2026</span>
+              </div>
+              <ul class="exp-bullets">
+                <li>Performed dataset manipulation, grouping, aggregation, sorting, and visualization using <strong>Pandas and NumPy</strong> across 4 real-world datasets.</li>
+                <li>Leveraged effective collaboration skills, communication, and data-driven problem solving to extract actionable business insights, reducing data cleaning errors by <strong>30%</strong>.</li>
+              </ul>
+              <div class="exp-tags">
+                <span>Pandas</span><span>NumPy</span><span>EDA</span><span>Data Cleansing</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- EDUCATION & CERTIFICATIONS (009) -->
+      <section id="education" class="card" aria-label="Education and Certifications">
+        <div class="card-header">
+          <span class="header-tag">[ EDUCATION & CERTIFICATIONS / 009 ]</span>
+        </div>
+
+        <!-- College -->
+        <div class="edu-card">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-info">
+            <h3 class="edu-degree">Computer & Control Engineering</h3>
+            <h4 class="edu-school">High Institute of Engineering & Technology (KFS-HIET)</h4>
+            <div class="edu-meta">
+              <span>Department: Electrical Dept</span>
+              <span class="separator">•</span>
+              <span>Status: Third-Year Student</span>
+            </div>
+            <p class="edu-desc">
+              Rigorous engineering curriculum combining computer science, database theory, microprocessors, automatic control systems, and electronics.
+            </p>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="certs-container">
+          <h4 class="certs-heading">CREDENTIALS & CERTIFICATIONS</h4>
+
+          <div class="cert-item">
+            <div class="cert-status-dot"></div>
+            <div class="cert-details">
+              <h5 class="cert-title">AI Literacy — AI Empower Yourself</h5>
+              <div class="cert-issuer">MCIT, Microsoft & Fast Lane</div>
+            </div>
+            <span class="cert-badge">VERIFIED</span>
+          </div>
+
+          <div class="cert-item">
+            <div class="cert-status-dot"></div>
+            <div class="cert-details">
+              <h5 class="cert-title">DEPI Data Engineering Track</h5>
+              <div class="cert-issuer">Digital Egypt Pioneers Initiative (DEPI)</div>
+            </div>
+            <span class="cert-badge">COMPLETED</span>
+          </div>
+        </div>
+
+        <!-- Languages -->
+        <div class="languages-box">
+          <h4 class="languages-heading">LANGUAGES</h4>
+          <div class="language-bars">
+            <div class="lang-item">
+              <div class="lang-label">
+                <span>Arabic</span>
+                <span class="lang-level">Native</span>
+              </div>
+              <div class="lang-bar"><div class="lang-bar-fill" style="width: 100%;"></div></div>
+            </div>
+            <div class="lang-item">
+              <div class="lang-label">
+                <span>English</span>
+                <span class="lang-level">B2 — Professional Working</span>
+              </div>
+              <div class="lang-bar"><div class="lang-bar-fill" style="width: 80%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+
+    <!-- ══════ ROW 7: Contact & Transmission ══════ -->
+    <section id="contact" class="card full-width-card contact-section" aria-label="Contact Section">
+      <div class="card-header">
+        <span class="header-tag">[ INITIATE_COMMUNICATION / 010 ]</span>
+        <span class="header-meta">RESPONSE_TIME &lt; 24H</span>
+      </div>
+
+      <div class="contact-layout">
+
+        <div class="contact-info-col">
+          <h2 class="contact-headline">LET'S BUILD SCALABLE DATA ARCHITECTURES TOGETHER.</h2>
+          <p class="contact-desc">
+            Whether you are looking for a dedicated <strong>Data Engineer Intern</strong>, have a data pipeline question, or want to discuss relational database schema designs, I'm always open to new challenges and technical conversations.
+          </p>
+
+          <div class="contact-methods">
+            <a href="mailto:Yousefhosnyabdelrasoul1@gmail.com" class="contact-method-card">
+              <div class="method-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="method-details">
+                <div class="method-title">EMAIL DIRECTLY</div>
+                <div class="method-val">Yousefhosnyabdelrasoul1@gmail.com</div>
+              </div>
+              <span class="method-arrow">→</span>
+            </a>
+
+            <a href="https://wa.me/201000386808" target="_blank" rel="noopener noreferrer" class="contact-method-card">
+              <div class="method-icon whatsapp-color">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+              </div>
+              <div class="method-details">
+                <div class="method-title">WHATSAPP / PHONE</div>
+                <div class="method-val">+20 1000386808</div>
+              </div>
+              <span class="method-arrow">→</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/yousef-hosny" target="_blank" rel="noopener noreferrer" class="contact-method-card">
+              <div class="method-icon linkedin-color">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </div>
+              <div class="method-details">
+                <div class="method-title">LINKEDIN NETWORK</div>
+                <div class="method-val">linkedin.com/in/yousef-hosny</div>
+              </div>
+              <span class="method-arrow">→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Message Dispatcher -->
+        <div class="contact-form-card">
+          <div class="form-header">
+            <span class="form-tag">[ TRANSMIT_PACKET // SEND MESSAGE ]</span>
+          </div>
+
+          <form id="contact-form" class="contact-form" onsubmit="event.preventDefault(); window.sendPacket();">
+            <div class="form-group">
+              <label for="form-name">YOUR NAME / ORGANIZATION</label>
+              <input type="text" id="form-name" required placeholder="e.g. Alex Reed (Data Lead)" />
+            </div>
+
+            <div class="form-group">
+              <label for="form-email">YOUR EMAIL ADDRESS</label>
+              <input type="email" id="form-email" required placeholder="alex@company.com" />
+            </div>
+
+            <div class="form-group">
+              <label for="form-subject">SUBJECT</label>
+              <input type="text" id="form-subject" required placeholder="Data Engineer Opportunity / Project Inquiry" />
+            </div>
+
+            <div class="form-group">
+              <label for="form-msg">DATA PAYLOAD / MESSAGE</label>
+              <textarea id="form-msg" rows="4" required placeholder="Hi Yousef, we reviewed your portfolio and would like to discuss a Data Engineering role..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">
+              <span class="btn-icon">⚡</span>
+              <span>TRANSMIT MESSAGE VIA GMAIL</span>
+              <span class="btn-arrow">→</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <span class="footer-brand">⚡ YOUSEF.DATA_SYS</span>
+        <span class="footer-sep">|</span>
+        <span class="footer-copy">Engineered with precision for GitHub Pages</span>
+      </div>
+      <div class="footer-mid">
+        <span class="sys-ok"><span class="sys-dot"></span> ALL DATA PIPELINES OPERATIONAL</span>
+      </div>
+      <div class="footer-right">
+        <a href="#profile" class="back-to-top-btn" title="Back to Top">
+          <span>[^ TOP]</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════ SCRIPTS ═══════════════ -->
+  <script src="script.js"></script>
+</body>
+</html>
