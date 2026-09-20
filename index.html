@@ -43,13 +43,13 @@
       <nav class="nav-links-container" aria-label="Main Navigation">
         <a href="#profile" class="nav-link active" data-section="001"><span class="nav-num">001</span><span class="nav-label">PROFILE</span></a>
         <a href="#biography" class="nav-link" data-section="002"><span class="nav-num">002</span><span class="nav-label">BIO</span></a>
-        <a href="#pipeline" class="nav-link" data-section="003"><span class="nav-num">003</span><span class="nav-label">PIPELINE</span></a>
-        <a href="#stats" class="nav-link" data-section="004"><span class="nav-num">004</span><span class="nav-label">METRICS</span></a>
-        <a href="#terminal" class="nav-link" data-section="005"><span class="nav-num">005</span><span class="nav-label">CONSOLE</span></a>
-        <a href="#skills" class="nav-link" data-section="006"><span class="nav-num">006</span><span class="nav-label">SKILLS</span></a>
-        <a href="#projects" class="nav-link" data-section="007"><span class="nav-num">007</span><span class="nav-label">PROJECTS</span></a>
-        <a href="#experience" class="nav-link" data-section="008"><span class="nav-num">008</span><span class="nav-label">EXP</span></a>
-        <a href="#education" class="nav-link" data-section="009"><span class="nav-num">009</span><span class="nav-label">EDU</span></a>
+        <a href="#education" class="nav-link" data-section="003"><span class="nav-num">003</span><span class="nav-label">EDU</span></a>
+        <a href="#pipeline" class="nav-link" data-section="004"><span class="nav-num">004</span><span class="nav-label">PIPELINE</span></a>
+        <a href="#stats" class="nav-link" data-section="005"><span class="nav-num">005</span><span class="nav-label">METRICS</span></a>
+        <a href="#terminal" class="nav-link" data-section="006"><span class="nav-num">006</span><span class="nav-label">CONSOLE</span></a>
+        <a href="#skills" class="nav-link" data-section="007"><span class="nav-num">007</span><span class="nav-label">SKILLS</span></a>
+        <a href="#projects" class="nav-link" data-section="008"><span class="nav-num">008</span><span class="nav-label">PROJECTS</span></a>
+        <a href="#experience" class="nav-link" data-section="009"><span class="nav-num">009</span><span class="nav-label">EXP</span></a>
         <a href="#contact" class="nav-link" data-section="010"><span class="nav-num">010</span><span class="nav-label">CONTACT</span></a>
       </nav>
     </div>
@@ -175,57 +175,76 @@
           </div>
         </section>
 
-        <!-- PRINCIPLES CARD (003) -->
-        <section id="principles" class="card principles-card" aria-label="Core Principles">
+        <!-- EDUCATION & CERTIFICATIONS (003) -->
+        <section id="education" class="card edu-top-card" aria-label="Education and Certifications">
           <div class="card-header">
-            <span class="header-tag">[ ENGINEERING_PRINCIPLES / 003 ]</span>
+            <span class="header-tag">[ EDUCATION & CERTIFICATIONS / 003 ]</span>
+            <span class="header-pill"><span class="pulse-cyan"></span> THIRD-YEAR STUDENT</span>
           </div>
 
-          <div class="principles-grid">
-            <div class="principle-item">
-              <div class="principle-icon-wrapper">
-                <span class="principle-dot"></span>
-                <span class="principle-code">P_01</span>
+          <!-- College -->
+          <div class="edu-card">
+            <div class="edu-icon">🎓</div>
+            <div class="edu-info">
+              <h3 class="edu-degree">Computer & Control Engineering</h3>
+              <h4 class="edu-school">High Institute of Engineering & Technology (KFS-HIET)</h4>
+              <div class="edu-meta">
+                <span>Department: Electrical Dept</span>
+                <span class="separator">•</span>
+                <span>Status: Third-Year Student</span>
               </div>
-              <div class="principle-content">
-                <h3 class="principle-title">DATA INTEGRITY & ZERO LOSS</h3>
-                <p class="principle-desc">Strict validation at ingestion; enforcing schema constraints, data types, and referential keys to ensure 100% clean data.</p>
+              <p class="edu-desc">
+                Rigorous engineering curriculum combining computer systems, relational database architectures, microprocessors, automatic control theory, and electronics.
+              </p>
+            </div>
+          </div>
+
+          <!-- Credentials & Languages Grid -->
+          <div class="edu-sub-grid">
+            <div class="certs-container">
+              <h4 class="certs-heading">CREDENTIALS & CERTIFICATIONS</h4>
+
+              <div class="cert-item">
+                <div class="cert-status-dot"></div>
+                <div class="cert-details">
+                  <h5 class="cert-title">AI Literacy — AI Empower Yourself</h5>
+                  <div class="cert-issuer">MCIT, Microsoft & Fast Lane</div>
+                </div>
+                <span class="cert-badge">VERIFIED</span>
+              </div>
+
+              <div class="cert-item">
+                <div class="cert-status-dot"></div>
+                <div class="cert-details">
+                  <h5 class="cert-title">DEPI Data Engineering Track</h5>
+                  <div class="cert-issuer">Digital Egypt Pioneers Initiative (DEPI)</div>
+                </div>
+                <span class="cert-badge">COMPLETED</span>
               </div>
             </div>
 
-            <div class="principle-item">
-              <div class="principle-icon-wrapper">
-                <span class="principle-dot"></span>
-                <span class="principle-code">P_02</span>
-              </div>
-              <div class="principle-content">
-                <h3 class="principle-title">OPTIMIZED RELATIONAL SCHEMAS</h3>
-                <p class="principle-desc">Designing normalized 3NF structures with foreign key integrity, indexed queries, and measurable efficiency gains.</p>
-              </div>
-            </div>
-
-            <div class="principle-item">
-              <div class="principle-icon-wrapper">
-                <span class="principle-dot"></span>
-                <span class="principle-code">P_03</span>
-              </div>
-              <div class="principle-content">
-                <h3 class="principle-title">ROBUST ETL/ELT PIPELINES</h3>
-                <p class="principle-desc">Modular Python and SQL pipelines engineered for automated data cleansing, aggregation, and reliable batch ingestion.</p>
-              </div>
-            </div>
-
-            <div class="principle-item">
-              <div class="principle-icon-wrapper">
-                <span class="principle-dot"></span>
-                <span class="principle-code">P_04</span>
-              </div>
-              <div class="principle-content">
-                <h3 class="principle-title">HARDWARE & EMBEDDED TELEMETRY</h3>
-                <p class="principle-desc">Bridging edge hardware (ESP32, Arduino) with time-series logging to capture high-frequency physical telemetry.</p>
+            <!-- Languages -->
+            <div class="languages-box">
+              <h4 class="languages-heading">LANGUAGES</h4>
+              <div class="language-bars">
+                <div class="lang-item">
+                  <div class="lang-label">
+                    <span>Arabic</span>
+                    <span class="lang-level">Native</span>
+                  </div>
+                  <div class="lang-bar"><div class="lang-bar-fill" style="width: 100%;"></div></div>
+                </div>
+                <div class="lang-item">
+                  <div class="lang-label">
+                    <span>English</span>
+                    <span class="lang-level">B2 — Professional Working</span>
+                  </div>
+                  <div class="lang-bar"><div class="lang-bar-fill" style="width: 80%;"></div></div>
+                </div>
               </div>
             </div>
           </div>
+
         </section>
 
       </div>
@@ -800,73 +819,58 @@
         </div>
       </section>
 
-      <!-- EDUCATION & CERTIFICATIONS (009) -->
-      <section id="education" class="card" aria-label="Education and Certifications">
+      <!-- PRINCIPLES CARD -->
+      <section id="principles" class="card principles-card" aria-label="Core Principles">
         <div class="card-header">
-          <span class="header-tag">[ EDUCATION & CERTIFICATIONS / 009 ]</span>
+          <span class="header-tag">[ ENGINEERING_PRINCIPLES & METHODOLOGIES ]</span>
+          <span class="header-status">CORE ETHOS</span>
         </div>
 
-        <!-- College -->
-        <div class="edu-card">
-          <div class="edu-icon">🎓</div>
-          <div class="edu-info">
-            <h3 class="edu-degree">Computer & Control Engineering</h3>
-            <h4 class="edu-school">High Institute of Engineering & Technology (KFS-HIET)</h4>
-            <div class="edu-meta">
-              <span>Department: Electrical Dept</span>
-              <span class="separator">•</span>
-              <span>Status: Third-Year Student</span>
+        <div class="principles-grid">
+          <div class="principle-item">
+            <div class="principle-icon-wrapper">
+              <span class="principle-dot"></span>
+              <span class="principle-code">P_01</span>
             </div>
-            <p class="edu-desc">
-              Rigorous engineering curriculum combining computer science, database theory, microprocessors, automatic control systems, and electronics.
-            </p>
-          </div>
-        </div>
-
-        <!-- Certifications -->
-        <div class="certs-container">
-          <h4 class="certs-heading">CREDENTIALS & CERTIFICATIONS</h4>
-
-          <div class="cert-item">
-            <div class="cert-status-dot"></div>
-            <div class="cert-details">
-              <h5 class="cert-title">AI Literacy — AI Empower Yourself</h5>
-              <div class="cert-issuer">MCIT, Microsoft & Fast Lane</div>
+            <div class="principle-content">
+              <h3 class="principle-title">DATA INTEGRITY & ZERO LOSS</h3>
+              <p class="principle-desc">Strict validation at ingestion; enforcing schema constraints, data types, and referential keys to ensure 100% clean data.</p>
             </div>
-            <span class="cert-badge">VERIFIED</span>
           </div>
 
-          <div class="cert-item">
-            <div class="cert-status-dot"></div>
-            <div class="cert-details">
-              <h5 class="cert-title">DEPI Data Engineering Track</h5>
-              <div class="cert-issuer">Digital Egypt Pioneers Initiative (DEPI)</div>
+          <div class="principle-item">
+            <div class="principle-icon-wrapper">
+              <span class="principle-dot"></span>
+              <span class="principle-code">P_02</span>
             </div>
-            <span class="cert-badge">COMPLETED</span>
+            <div class="principle-content">
+              <h3 class="principle-title">OPTIMIZED RELATIONAL SCHEMAS</h3>
+              <p class="principle-desc">Designing normalized 3NF structures with foreign key integrity, indexed queries, and measurable efficiency gains.</p>
+            </div>
           </div>
-        </div>
 
-        <!-- Languages -->
-        <div class="languages-box">
-          <h4 class="languages-heading">LANGUAGES</h4>
-          <div class="language-bars">
-            <div class="lang-item">
-              <div class="lang-label">
-                <span>Arabic</span>
-                <span class="lang-level">Native</span>
-              </div>
-              <div class="lang-bar"><div class="lang-bar-fill" style="width: 100%;"></div></div>
+          <div class="principle-item">
+            <div class="principle-icon-wrapper">
+              <span class="principle-dot"></span>
+              <span class="principle-code">P_03</span>
             </div>
-            <div class="lang-item">
-              <div class="lang-label">
-                <span>English</span>
-                <span class="lang-level">B2 — Professional Working</span>
-              </div>
-              <div class="lang-bar"><div class="lang-bar-fill" style="width: 80%;"></div></div>
+            <div class="principle-content">
+              <h3 class="principle-title">ROBUST ETL/ELT PIPELINES</h3>
+              <p class="principle-desc">Modular Python and SQL pipelines engineered for automated data cleansing, aggregation, and reliable batch ingestion.</p>
+            </div>
+          </div>
+
+          <div class="principle-item">
+            <div class="principle-icon-wrapper">
+              <span class="principle-dot"></span>
+              <span class="principle-code">P_04</span>
+            </div>
+            <div class="principle-content">
+              <h3 class="principle-title">HARDWARE & EMBEDDED TELEMETRY</h3>
+              <p class="principle-desc">Bridging edge hardware (ESP32, Arduino) with time-series logging to capture high-frequency physical telemetry.</p>
             </div>
           </div>
         </div>
-
       </section>
 
     </div>

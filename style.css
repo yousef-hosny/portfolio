@@ -1570,6 +1570,25 @@ button {
 }
 
 /* ─── Education & Credentials ─── */
+.edu-top-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.edu-sub-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 6px;
+}
+
+@media (max-width: 768px) {
+  .edu-sub-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .edu-card {
   display: flex;
   gap: 16px;
@@ -1577,7 +1596,7 @@ button {
   border: 1px solid rgba(56, 189, 248, 0.12);
   border-radius: var(--radius-md);
   padding: 16px;
-  margin-bottom: 20px;
+  margin-bottom: 4px;
 }
 
 .edu-icon {
