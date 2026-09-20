@@ -461,7 +461,7 @@ button {
   position: relative;
   width: 100%;
   height: 290px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   border-radius: var(--radius-md);
   overflow: hidden;
   background: #081126;
@@ -546,29 +546,29 @@ button {
 
 /* ─── USB Badge (under profile image) ─── */
 .usb-badge {
-  position: absolute;
-  bottom: -14px;
-  z-index: 4;
   display: flex;
   align-items: center;
-  gap: 5px;
-  font-size: 0.72rem;
+  justify-content: center;
+  gap: 6px;
+  margin: -10px auto 14px auto;
+  width: fit-content;
+  font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.8px;
   color: var(--accent-cyan);
-  background: rgba(6, 12, 29, 0.88);
-  border: 1px solid rgba(56, 189, 248, 0.4);
-  padding: 4px 12px;
+  background: rgba(6, 12, 29, 0.92);
+  border: 1px solid rgba(56, 189, 248, 0.5);
+  padding: 5px 16px;
   border-radius: 20px;
-  box-shadow: 0 0 10px rgba(56, 189, 248, 0.25);
+  box-shadow: 0 0 14px rgba(56, 189, 248, 0.3);
   backdrop-filter: blur(8px);
+  text-transform: uppercase;
 }
 
 .usb-badge svg {
   stroke: var(--accent-cyan);
   flex-shrink: 0;
 }
-
 
 .profile-info {
   display: flex;
