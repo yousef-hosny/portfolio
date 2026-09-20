@@ -549,68 +549,110 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 7px;
-  margin: 8px 0 16px 0;
+  gap: 8px;
+  margin: 10px 0 18px 0;
+  padding: 0 4px;
 }
 
 .usp-badge {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
-  font-size: 0.68rem;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  padding: 5px 11px;
-  border-radius: 20px;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.67rem;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  padding: 6px 13px;
+  border-radius: 6px;
   border: 1px solid;
-  transition: all 0.25s ease;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: default;
+  position: relative;
+  overflow: hidden;
+}
+
+.usp-badge::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, transparent 60%);
+  pointer-events: none;
 }
 
 .usp-badge:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 14px rgba(56, 189, 248, 0.3);
+  transform: translateY(-3px) scale(1.03);
+  filter: brightness(1.2);
 }
 
+/* Python - Gold */
 .usp-python {
   color: #fbbf24;
-  background: rgba(251, 191, 36, 0.1);
-  border-color: rgba(251, 191, 36, 0.4);
+  background: rgba(251, 191, 36, 0.08);
+  border-color: rgba(251, 191, 36, 0.5);
+  box-shadow: 0 0 8px rgba(251, 191, 36, 0.15), inset 0 0 8px rgba(251, 191, 36, 0.05);
 }
 .usp-python svg { stroke: #fbbf24; }
+.usp-python:hover { box-shadow: 0 0 18px rgba(251, 191, 36, 0.4); }
 
+/* SQL - Cyan (matches site accent) */
 .usp-sql {
-  color: #38bdf8;
-  background: rgba(56, 189, 248, 0.1);
-  border-color: rgba(56, 189, 248, 0.4);
+  color: var(--accent-cyan);
+  background: rgba(56, 189, 248, 0.08);
+  border-color: rgba(56, 189, 248, 0.5);
+  box-shadow: 0 0 8px rgba(56, 189, 248, 0.15), inset 0 0 8px rgba(56, 189, 248, 0.05);
 }
-.usp-sql svg { stroke: #38bdf8; }
+.usp-sql svg { stroke: var(--accent-cyan); }
+.usp-sql:hover { box-shadow: 0 0 18px rgba(56, 189, 248, 0.45); }
 
+/* ETL - Purple */
 .usp-etl {
-  color: #a78bfa;
-  background: rgba(167, 139, 250, 0.1);
-  border-color: rgba(167, 139, 250, 0.4);
+  color: #c4b5fd;
+  background: rgba(167, 139, 250, 0.08);
+  border-color: rgba(167, 139, 250, 0.5);
+  box-shadow: 0 0 8px rgba(167, 139, 250, 0.15), inset 0 0 8px rgba(167, 139, 250, 0.05);
 }
-.usp-etl svg { stroke: #a78bfa; }
+.usp-etl svg { stroke: #c4b5fd; }
+.usp-etl:hover { box-shadow: 0 0 18px rgba(167, 139, 250, 0.4); }
 
+/* Data - Green */
 .usp-data {
   color: #34d399;
-  background: rgba(52, 211, 153, 0.1);
-  border-color: rgba(52, 211, 153, 0.4);
+  background: rgba(52, 211, 153, 0.08);
+  border-color: rgba(52, 211, 153, 0.5);
+  box-shadow: 0 0 8px rgba(52, 211, 153, 0.15), inset 0 0 8px rgba(52, 211, 153, 0.05);
 }
 .usp-data svg { stroke: #34d399; }
+.usp-data:hover { box-shadow: 0 0 18px rgba(52, 211, 153, 0.4); }
 
+/* Web Scraping - Orange */
+.usp-scraping {
+  color: #fb923c;
+  background: rgba(251, 146, 60, 0.08);
+  border-color: rgba(251, 146, 60, 0.5);
+  box-shadow: 0 0 8px rgba(251, 146, 60, 0.15), inset 0 0 8px rgba(251, 146, 60, 0.05);
+}
+.usp-scraping svg { stroke: #fb923c; }
+.usp-scraping:hover { box-shadow: 0 0 18px rgba(251, 146, 60, 0.4); }
+
+/* Available for Hire - Pink pulsing */
 .usp-freelance {
   color: #f472b6;
-  background: rgba(244, 114, 182, 0.1);
-  border-color: rgba(244, 114, 182, 0.4);
-  animation: pulseAvailable 2s infinite;
+  background: rgba(244, 114, 182, 0.08);
+  border-color: rgba(244, 114, 182, 0.6);
+  box-shadow: 0 0 8px rgba(244, 114, 182, 0.2), inset 0 0 8px rgba(244, 114, 182, 0.05);
+  animation: pulseHire 2.5s ease-in-out infinite;
 }
 .usp-freelance svg { stroke: #f472b6; }
 
-@keyframes pulseAvailable {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(244, 114, 182, 0.3); }
-  50% { box-shadow: 0 0 0 5px rgba(244, 114, 182, 0); }
+@keyframes pulseHire {
+  0%, 100% {
+    box-shadow: 0 0 6px rgba(244, 114, 182, 0.3);
+    border-color: rgba(244, 114, 182, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 18px rgba(244, 114, 182, 0.6), 0 0 30px rgba(244, 114, 182, 0.2);
+    border-color: rgba(244, 114, 182, 1);
+  }
 }
 
 .usp-badge svg {
